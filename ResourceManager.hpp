@@ -9,7 +9,7 @@ private:
 
 public:
 
-	ResourceManager() { r1 = new Resource{} }
+	ResourceManager() { r1 = new Resource{}; }
 
 	double get() { return r1->get(); }
 
