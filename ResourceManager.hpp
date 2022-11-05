@@ -11,9 +11,9 @@ public:
 
 	ResourceManager() { r1 = new Resource{}; }
 
-	double get() { return r1->get(); }
+	double get() { return r1.get(); }
 
-	ResourceManager(const ResourceManager& l) = default; 
+	ResourceManager(const ResourceManager& l) : r1{ l.r1 } {}
 
 	~ResourceManager() { delete r1; }
 
